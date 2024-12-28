@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work History</title>
+    <style>/* Starts CSS portion of HTML with bootstrap*/.custom-table-bordered{        
+        border: 2px solid #333;} 
+      .custom-table-bordered th{border: 2px solid black; background-color: salmon;}
+       .custom-table-bordered td {
+        border: 2px solid #333;
+      }
+      .table-container/* formats table container */ {
+            width: 100%; 
+            display: flex;
+            justify-content: center;
+            padding-bottom: 25px; 
+        }
+
+        table {
+            width: 100%; 
+            max-width: 1000px;
+            border-collapse: collapse; 
+        }
+
+        th, td {
+            border: 1px solid black; 
+            padding: 8px;
+            text-align: left;
+            
+        }
+
+        th {
+            background-color: salmon; 
+            font-size: 75 px
+        }
+.job-title{ background-color: rgb(246, 201, 196);font-weight: bold;}
+        .spacer{padding-bottom: 30px;}
+        
+        menu {
+            display: flex;               
+            justify-content: space-between;     
+            gap: 700px;  
+            max-width: fit-content; 
+            padding: 5px; 
+            border: 1px solid black; 
+            border-radius: 5px; 
+            background-color: color-mix(in srgb, salmon 20%, pink 80%);
+            
+                             
+        }
+
+        button {
+            background-color: salmon;
+            color: rgb(2, 1, 1);
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(247, 216, 213);
+            } 
+</style>
+</head>
+<body>
+    <iframe id="spotify-player" 
+    src="https://open.spotify.com/embed/artist/1FcRUsTmnEQfVCH5OIKSpb?utm_source=generator"
+          width="300" 
+          height="380" 
+          frameborder="0" 
+          allowtransparency="true" 
+          allow="encrypted-media">
+  </iframe>
+       <div class="container" style="text-align: center; background-color:salmon;border:solid #333;font-size: 75px;">
+                WORK HISTORY(PRESENT/MOST RECENT TO PAST)
+    </div></b> <!-- creates container for the top of the page, and styled appropriately -->
+    <div class="container-fluid" style="justify-content: center;">
+    <nav>
+    <menu><!-- creates navigation bar -->
+    
+    <a href="resumeintro.html"><button id="share">Home Page</button></a>
+    <a href="Educationcertifications.html"><button id="share">Education and Certifications</button></a>
+    <a href="references.html"><button id="share">References</button></a>
+    
+    </menu></nav></div>
+  </div>
+    <div class="spacer"></div><!-- adds space -->
+    
+    <div class="table-container"><!-- creats a table container -->
+    <table>
+            <th >Occupation</th>
+            <th >Employer</th>
+            <th >Start</th>
+            <th >End</th>  
+        
+        <tr class="job-title">
+            
+            <td >Computer Programmer</td>
+            <td>Self</td>
+            <td>July 2007</td>
+            <td>Present</td>  
+        </tr>
+        <tr>
+            <td colspan="4">
+                <li>Extensive background</li>
+                <li>Setting up Computers and installing software</li>
+                <li>Mac IOS experience and Microsoft Experience</li>
+            </td>
+        </tr>
+    </table></div>
+    <div class="table-container">
+    <table>
+        <th >Occupation</th>
+        <th >Employer</th>
+        <th>Start</th>
+        <th >End</th> 
+         <tr class=" job-title">   
+        <td >Operations Techician</td>
+        <a href="https://poet.com/"></a><td>POET LLC</td></a>
+        <td>June 2023</td>
+        <td>November 2024</td>  
+    </tr>
+    <tr>
+        <td colspan="4">
+            <li>Managed plant operations</li>
+            <li>Managed boards(machines via computers)</li>
+            <li>Plant maitinence and cleaning</li>
+        </td>
+    </tr>
+</table></div>
+<div class="table-container">
+<table>
+    <th >Occupation</th>
+    <th >Employer</th>
+    <th >Start</th>
+    <th >End</th>  
+
+<tr class="job-title">
+    
+    <td >Specialized Populations Officer</td>
+    <a href="https://supremecourt.nebraska.gov/"><td>Nebraska Supreme Court</td>
+   </a> <td>September 2013</td>
+    <td>May 2023</td>  
+</tr>
+<tr>
+    <td colspan="4">
+        <li>Managed caseload of Very-High Risk clients</li>
+        <li>Clientele were either from the prison or county jails</li>
+        <li>All had a combination of disorders to include substance abuse, mental health,
+            and other medical needs
+        </li>
+        <li>Individualy I had a 2% recidivism rate</li>
+        <li>I was awarded Officer of the Year</li>
+    </td>
+</tr>
+</table></div>
+<div class="table-container"><table>
+    <th >Occupation</th>
+    <th >Employer</th>
+    <th >Start</th>
+    <th >End</th>  
+
+<tr class="job-title">
+    
+    <td >IHSS/Foster Care Licensing Specialist</td>
+    <td>Epworth Village</td>
+    <td>July 2007</td>
+    <td>September 2013</td>  
+</tr>
+<tr>
+    <td colspan="4">
+        <li>Worked with clients referred from DHHS(the Department of Health and Human Services)</li>
+        <li>Skill built with clients in their homes</li>
+        <li>Licensed foster homes</li>
+        <li>supported foster homes</li>
+    </td>
+</tr>
+</table>
+    </div>
+    
+    
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
