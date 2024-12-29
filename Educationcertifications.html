@@ -23,11 +23,15 @@
         h2{text-decoration: underline;}
 table{ width: 100%;border: 2px;}
        th, tr, td{ border: 2px solid black ;border-collapse:collapse;}
-       .experience{ text-align: center;border: 2px;background-color: rgb(248, 182, 175);}
-       td{text-align: left;}
        th{ background-color: salmon; text-align: center;}
-
-        menu {
+       td{text-align: left;
+        background-color: rgba(227, 219, 219, 0.952); 
+    padding: 10px;
+    border: 1px solid #030202;
+    text-align: center;
+    color: #000; }
+    .other-lables{background-color: rgb(244, 186, 179);}
+ menu {
             display: flex;               
             justify-content: space-between;     
             gap: 700px;  
@@ -36,7 +40,7 @@ table{ width: 100%;border: 2px;}
             border: 1px solid black; 
             border-radius: 5px; 
             background-color: color-mix(in srgb, salmon 20%, pink 80%);}
-.lables{background-color: rgb(244, 186, 179);}
+
         button {
             background-color: salmon;
             color: rgb(2, 1, 1);
@@ -49,26 +53,71 @@ table{ width: 100%;border: 2px;}
         button:hover {
             background-color: rgb(247, 216, 213);
             } 
+            nav{;
+    padding: 10px 0;
+    text-align: center;}
+    .minimal-nav {
+    background-color: #ddd;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.nav-links a.active {
+    background: #4eb7f5; 
+    color: #fff;
+    border: none;
+}
+
+.nav-links a:hover {
+    background: #4eb7f5; 
+    color: #fff;
+    border: none;
+}
         </style>
 </head>
 <h1>Education and Certificates</h1>
 <body>
-<div class="container-fluid">
-        <nav><menu>
-          <a href="resumeintro.html"><button class= navigate id="share">Home Page</button></a>
-          <a href="workhistory.html"><button id="share">Work History</button></a>
-          <a href="references.html"><button id="share">References</button></a>
-        </menu></nav></div>
+    <nav class="minimal-nav">
+        <ul class="nav-links">
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="workhistory.html">Work History</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="www.linkedin.com/in/brandon-hinrichs-3841bb78">LinkedIn</a></li>
+            <li><a href="https://github.com/Strongman1380">GitHub</a></li>
+        </ul>
+    </nav>
     <div class="space"></div>
     <div class="container-fluid">
     <table>
         <th colspan="5">Education History</th>
         <tr class="lables">
-            <td>Institution</td>
-            <td>Graduation(yes/no)</td>
-            <td>Town</td>
-            <td>Degree Title</td>
-            <td>Years Attended</td>
+            <th class="other-lables">Institution</th>
+            <th class="other-lables">Graduation(yes/no)</td>
+            <th class="other-lables">Town</td>
+            <th class="other-lables">Degree Title</td>
+            <th class="other-lables">Years Attended</td>
         </tr>
         <tr>
             <td>Wisconsin Lutheran Seminary</td>

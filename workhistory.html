@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work History</title>
-    <style>/* Starts CSS portion of HTML with bootstrap*/.custom-table-bordered{        
+    <style>
+    body {
+    background-image: url('website.jpg');
+    background-size: cover;
+    background-position: center;
+}
+    .custom-table-bordered{        
         border: 2px solid #333;} 
       .custom-table-bordered th{border: 2px solid black; background-color: salmon;}
        .custom-table-bordered td {
@@ -36,59 +42,77 @@
         }
 .job-title{ background-color: rgb(246, 201, 196);font-weight: bold;}
         .spacer{padding-bottom: 30px;}
-        
-        menu {
-            display: flex;               
-            justify-content: space-between;     
-            gap: 700px;  
-            max-width: fit-content; 
-            padding: 5px; 
-            border: 1px solid black; 
-            border-radius: 5px; 
-            background-color: color-mix(in srgb, salmon 20%, pink 80%);
-            
-                             
-        }
+        nav{background:#ddd ;
+    padding: 10px 0;
+    text-align: center;}
+    .minimal-nav {
+    background-color: #ddd;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+}
+.skills{ background-color: rgba(227, 219, 219, 0.952) 
+}
+.minimal-nav{;
+    padding: 10px 0;
+    text-align: center;}
+.minimal-nav {
+    background-color: #ddd;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
-        button {
-            background-color: salmon;
-            color: rgb(2, 1, 1);
-            padding: 12px 20px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-        }
+.nav-links li {
+    margin: 0 10px;
+}
 
-        button:hover {
-            background-color: rgb(247, 216, 213);
-            } 
+.nav-links a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.nav-links a.active {
+    background: #4eb7f5; 
+    color: #fff;
+    border: none;
+}
+
+.nav-links a:hover {
+    background: #4eb7f5; 
+    color: #fff;
+    border: none;
+}
 </style>
 </head>
 <body>
-    <iframe id="spotify-player" 
-    src="https://open.spotify.com/embed/artist/1FcRUsTmnEQfVCH5OIKSpb?utm_source=generator"
-          width="300" 
-          height="380" 
-          frameborder="0" 
-          allowtransparency="true" 
-          allow="encrypted-media">
-  </iframe>
        <div class="container" style="text-align: center; background-color:salmon;border:solid #333;font-size: 75px;">
                 WORK HISTORY(PRESENT/MOST RECENT TO PAST)
-    </div></b> <!-- creates container for the top of the page, and styled appropriately -->
+    </div></b>
+    <div class="spacer"></div>
     <div class="container-fluid" style="justify-content: center;">
-    <nav>
-    <menu><!-- creates navigation bar -->
-    
-    <a href="resumeintro.html"><button id="share">Home Page</button></a>
-    <a href="Educationcertifications.html"><button id="share">Education and Certifications</button></a>
-    <a href="references.html"><button id="share">References</button></a>
-    
-    </menu></nav></div>
+    <nav class="minimal-nav">
+    <ul class="nav-links">
+    <li><a href="index.html">Home Page</a></li>
+   <li> <a href="Educationcertifications.html">Education and Certifications</a></li>
+   <li><a href="references.html">References</a></li> 
+   <li><a href="www.linkedin.com/in/brandon-hinrichs-3841bb78">LinkedIn</a></li>
+    <li><a href="https://github.com/Strongman1380">GitHub</a></li>
+    </ul>
+   </nav></div>
   </div>
-    <div class="spacer"></div><!-- adds space -->
+    <div class="spacer"></div>
     
-    <div class="table-container"><!-- creats a table container -->
+    <div class="table-container">
     <table>
             <th >Occupation</th>
             <th >Employer</th>
@@ -102,7 +126,7 @@
             <td>July 2007</td>
             <td>Present</td>  
         </tr>
-        <tr>
+        <tr class="skills">
             <td colspan="4">
                 <li>Extensive background</li>
                 <li>Setting up Computers and installing software</li>
@@ -123,10 +147,11 @@
         <td>November 2024</td>  
     </tr>
     <tr>
-        <td colspan="4">
-            <li>Managed plant operations</li>
-            <li>Managed boards(machines via computers)</li>
-            <li>Plant maitinence and cleaning</li>
+        <tr class="skills">
+            <td colspan="4">
+                <li>Managed plant operations</li>
+                <li>Managed boards(machines via computers)</li>
+                <li>Plant maitinence and cleaning</li>
         </td>
     </tr>
 </table></div>
@@ -144,7 +169,7 @@
    </a> <td>September 2013</td>
     <td>May 2023</td>  
 </tr>
-<tr>
+<tr class="skills">
     <td colspan="4">
         <li>Managed caseload of Very-High Risk clients</li>
         <li>Clientele were either from the prison or county jails</li>
@@ -169,7 +194,7 @@
     <td>July 2007</td>
     <td>September 2013</td>  
 </tr>
-<tr>
+<tr class="skills">
     <td colspan="4">
         <li>Worked with clients referred from DHHS(the Department of Health and Human Services)</li>
         <li>Skill built with clients in their homes</li>
